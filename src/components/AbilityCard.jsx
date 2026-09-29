@@ -10,18 +10,16 @@ const variantStyles = {
 const AbilityCard = ({ variant, label, title, className = "" }) => {
   return (
     <div
-      className={`flex min-w-0 flex-col shadow-xl shadow-blue-950/25 [container-type:inline-size] ${
+      className={`flex flex-col justify-between gap-4 sm:gap-6 px-4 py-4 sm:px-5 sm:py-5 xl:px-6 xl:py-6 min-h-[140px] sm:min-h-[160px] xl:min-h-[190px] 2xl:min-h-[210px] min-w-0 shadow-xl shadow-blue-950/25 ${
         variantStyles[variant] ?? variantStyles.white
       } ${className}`}
     >
-      <div className="flex min-w-0 flex-1 flex-col justify-between min-h-[clamp(8.75rem,52cqw,13rem)] gap-[clamp(1rem,7cqw,1.75rem)] p-[clamp(0.875rem,6cqw,1.5rem)]">
-        <span className="self-start max-w-full break-words rounded-full border border-current px-[0.9em] py-[0.45em] text-[length:clamp(0.6875rem,4.4cqw,0.9375rem)] font-medium leading-tight">
-          {label}
-        </span>
-        <p className="text-[length:clamp(0.75rem,5.4cqw,1.25rem)] font-extrabold uppercase leading-snug tracking-wide break-words [text-wrap:balance]">
-          {title}
-        </p>
-      </div>
+      <span className="self-start max-w-full break-words rounded-full border border-current px-3 py-1.5 xl:px-4 xl:py-2 text-xs sm:text-sm lg:text-[11px] xl:text-xs 2xl:text-sm font-medium leading-tight">
+        {label}
+      </span>
+      <p className="text-sm sm:text-base lg:text-xs xl:text-sm 2xl:text-base font-extrabold uppercase leading-snug tracking-wide break-words">
+        {title}
+      </p>
     </div>
   );
 };

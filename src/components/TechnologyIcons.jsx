@@ -11,7 +11,7 @@ const IconBase = ({ className = "", children }) => (
     preserveAspectRatio="xMidYMid meet"
     aria-hidden="true"
     focusable="false"
-    className={`w-full h-full ${className}`}
+    className={className}
   >
     {children}
   </svg>

@@ -16,7 +16,7 @@ const TechnologyCard = ({
   className = "",
 }) => (
   <div
-    className={`relative min-w-0 rounded-[clamp(1rem,2vw,1.75rem)] overflow-hidden text-white flex flex-col z-10 [container-type:inline-size] ${className}`}
+    className={`relative min-w-0 rounded-2xl xl:rounded-3xl overflow-hidden text-white flex flex-col z-10 ${className}`}
   >
     <img
       src={`${import.meta.env.BASE_URL}technology-card.png`}
@@ -29,16 +29,16 @@ const TechnologyCard = ({
       } -z-10`}
     />
 
-    <div className="flex flex-1 flex-col min-w-0 p-[clamp(1.25rem,7cqw,2.5rem)]">
-      <h3 className="text-[length:clamp(1.125rem,7cqw,1.875rem)] font-extrabold uppercase text-center leading-tight break-words [text-wrap:balance]">
+    <div className="p-5 sm:p-6 lg:p-5 xl:p-8 2xl:p-10 flex flex-col flex-1">
+      <h3 className="text-lg min-[380px]:text-xl sm:text-2xl lg:text-xl xl:text-2xl 2xl:text-3xl font-extrabold uppercase text-center leading-tight break-words">
         {title}
       </h3>
 
-      <p className="text-[length:clamp(0.75rem,4.2cqw,1rem)] mt-[clamp(1rem,5.5cqw,1.5rem)] leading-relaxed break-words">
+      <p className="text-xs sm:text-sm lg:text-xs xl:text-sm 2xl:text-base mt-4 sm:mt-5 xl:mt-6 leading-relaxed break-words">
         {forText}
       </p>
 
-      <ul className="text-[length:clamp(0.75rem,4.2cqw,1rem)] mt-[clamp(0.75rem,4.5cqw,1.25rem)] space-y-[clamp(0.5rem,2.5cqw,0.75rem)] list-disc list-inside marker:text-white">
+      <ul className="text-xs sm:text-sm lg:text-xs xl:text-sm 2xl:text-base mt-3 sm:mt-4 xl:mt-5 space-y-2 xl:space-y-3 list-disc list-inside marker:text-white">
         {features.map((f, i) => (
           <li key={i} className="leading-snug break-words">
             {f}
@@ -46,18 +46,18 @@ const TechnologyCard = ({
         ))}
       </ul>
 
-      <div className="mt-[clamp(1rem,5cqw,1.5rem)] text-[length:clamp(0.75rem,4.2cqw,1rem)] space-y-[0.2em]">
+      <div className="mt-4 sm:mt-5 xl:mt-6 text-xs sm:text-sm lg:text-xs xl:text-sm 2xl:text-base space-y-0.5 xl:space-y-1">
         <p className="break-words">{price}</p>
         <p className="break-words">{duration}</p>
       </div>
 
-      <div className="flex-1 flex items-center justify-center py-[clamp(1.25rem,6cqw,2rem)]">
-        <Icon className="w-[clamp(3.5rem,20cqw,6rem)] h-[clamp(3.5rem,20cqw,6rem)] text-white" />
+      <div className="flex-1 flex items-center justify-center py-5 sm:py-6 xl:py-8">
+        <Icon className="h-14 w-14 sm:h-20 sm:w-20 lg:h-16 lg:w-16 xl:h-20 xl:w-20 2xl:h-24 2xl:w-24 text-white" />
       </div>
 
       <button
         type="button"
-        className="bg-white text-blue-900 text-[length:clamp(0.875rem,4.4cqw,1.125rem)] font-semibold rounded-full py-[0.85em] mt-auto shadow-md hover:bg-blue-50 transition-colors"
+        className="bg-white text-blue-900 text-sm xl:text-base 2xl:text-lg font-semibold rounded-full py-3 xl:py-4 mt-auto shadow-md hover:bg-blue-50 transition-colors"
       >
         Оставить заявку
       </button>
