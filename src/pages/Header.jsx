@@ -6,7 +6,7 @@ const Header = () => {
     <header
       className="relative min-h-screen bg-cover bg-center flex flex-col px-4 sm:px-6 md:px-10 pb-12 pt-4"
       style={{
-        backgroundImage: `url(${import.meta.env.BASE_URL}header.png)`,
+        backgroundImage: `url(${import.meta.env.BASE_URL}/header.png)`,
       }}
     >
       <Navbar />
