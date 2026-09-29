@@ -17,7 +17,7 @@ const Form = () => {
   return (
     <section
       className="relative h-screen w-full bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${import.meta.env.BASE_URL}form2.png)` }}
+      style={{ backgroundImage: `url(${import.meta.env.BASE_URL}/form2.png)` }}
     >
       <div className="relative z-10 flex h-full flex-col justify-center px-6 sm:px-10 md:px-14 lg:px-16 max-w-5xl">
         <h2 className="text-3xl sm:text-4xl md:text-5xl  uppercase leading-tight text-blue-900">

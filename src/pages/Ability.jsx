@@ -34,7 +34,7 @@ const Ability = () => {
       <div className="relative max-w-6xl mx-auto">
         <div className="w-full h-[44vh] sm:h-[50vh] md:h-[75vh] max-h-screen overflow-hidden rounded-3xl bg-slate-900">
           <img
-            src={`${import.meta.env.BASE_URL}ability.png`}
+            src={`${import.meta.env.BASE_URL}/ability.png`}
             alt="Загрузка карго в самолёт"
             className="w-full h-full object-cover"
           />

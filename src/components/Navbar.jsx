@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-8 py-4 bg-transparent">
       <img
-        src={`${import.meta.env.BASE_URL}logo.png`}
+        src={`${import.meta.env.BASE_URL}/logo.png`}
         alt="Jet Bridge"
         className="h-15 w-15"
       />
