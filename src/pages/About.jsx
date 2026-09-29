@@ -32,7 +32,7 @@ const About = () => {
 
       <div>
         <img
-          src="/about.png"
+          src={`${import.meta.env.BASE_URL}about.png`}
           alt="JetBridge"
           className="w-full h-full object-cover rounded-2xl"
         />

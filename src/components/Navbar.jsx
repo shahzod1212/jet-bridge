@@ -3,7 +3,11 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-8 py-4 bg-transparent">
-      <img src="/logo.png" alt="Jet Bridge" className="h-15 w-15" />
+      <img
+        src={`${import.meta.env.BASE_URL}logo.png`}
+        alt="Jet Bridge"
+        className="h-15 w-15"
+      />
 
       <div className="flex items-center gap-6">
         <span className="text-white text-sm font-medium">RU / KZ</span>

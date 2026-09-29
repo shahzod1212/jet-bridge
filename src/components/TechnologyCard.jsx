@@ -19,7 +19,7 @@ const TechnologyCard = ({
     className={`relative rounded-2xl overflow-hidden text-white flex flex-col z-10 ${className}`}
   >
     <img
-      src="/technology-card.png"
+      src={`${import.meta.env.BASE_URL}technology-card.png`}
       alt=""
       className="absolute inset-0 w-full h-full object-cover -z-20"
     />

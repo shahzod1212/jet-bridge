@@ -28,7 +28,7 @@ const Feature = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden px-4 sm:px-6 md:px-10 py-4">
       <img
-        src="/background-logo.png"
+        src={`${import.meta.env.BASE_URL}background-logo.png`}
         alt=""
         className="pointer-events-none select-none absolute inset-0 m-auto w-[85%] h-[85%] object-cover"
       />
@@ -36,7 +36,7 @@ const Feature = () => {
       <div className="relative h-full flex flex-col md:block max-w-6xl mx-auto">
         <div className="flex flex-col md:block gap-2">
           <img
-            src="/featureImage1.png"
+            src={`${import.meta.env.BASE_URL}featureImage1.png`}
             alt="JetBridge"
             className="w-full md:w-[30%] h-40 md:h-48 object-cover md:absolute md:left-0 md:top-0 rounded-3xl"
           />
@@ -65,7 +65,7 @@ const Feature = () => {
             className="z-10 md:absolute md:left-[12%] md:top-[80%] md:w-[32%] text-[10px] sm:text-xs px-3 py-2"
           />
           <img
-            src="/featureImage2.png"
+            src={`${import.meta.env.BASE_URL}featureImage2.png`}
             alt="JetBridge"
             className="w-full md:w-[42%] h-40 md:h-48 object-cover md:absolute md:left-[30%] md:top-[62%] rounded-3xl"
           />

@@ -6,7 +6,9 @@ const HowItWorks = () => {
   return (
     <section
       className="relative rounded-2xl overflow-hidden min-h-screen max-w-6xl mx-auto my-10 bg-cover bg-left bg-white"
-      style={{ backgroundImage: "url('/technology-header.png')" }}
+      style={{
+        backgroundImage: `url(${import.meta.env.BASE_URL}technology-header.png)`,
+      }}
     >
       <div className="relative grid grid-cols-1 md:grid-cols-4 gap-6 px-6 sm:px-8 md:px-10 pt-10 pb-6">
         <div className="md:col-span-2 flex flex-col justify-center">
