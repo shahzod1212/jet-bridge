@@ -51,22 +51,14 @@ const plans = [
 
 const Technology = () => {
   return (
-    <section className="relative overflow-x-clip px-4 sm:px-6 md:px-10 lg:px-14 xl:px-20 pt-10 pb-28 sm:pt-14 sm:pb-32 lg:pt-16 lg:pb-24 xl:pt-20 xl:pb-32">
-      <h2 className="relative text-blue-900 text-xl min-[380px]:text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold uppercase text-center mb-8 sm:mb-10 md:mb-14 xl:mb-16 leading-tight break-words">
+    <section className="relative px-4 sm:px-6 md:px-10 py-14 md:py-20">
+      <h2 className="relative text-blue-900 text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-center mb-10 md:mb-14">
         Технологии, которые работают на вас
       </h2>
 
-      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 xl:gap-8 max-w-md sm:max-w-3xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-screen-2xl mx-auto">
+      <div className="relative grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
         {plans.map((plan, i) => (
-          <TechnologyCard
-            key={i}
-            {...plan}
-            className={
-              i === 2
-                ? "sm:col-span-2 sm:max-w-[calc(50%-0.75rem)] sm:mx-auto sm:w-full lg:col-span-1 lg:max-w-none"
-                : ""
-            }
-          />
+          <TechnologyCard key={i} {...plan} />
         ))}
       </div>
 
