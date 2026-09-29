@@ -32,24 +32,30 @@ const Ability = () => {
       </h2>
 
       <div className="relative max-w-6xl mx-auto">
-        <div className="w-full h-[44vh] sm:h-[50vh] md:h-[75vh] max-h-screen overflow-hidden rounded-3xl bg-slate-900">
+        <div className="w-full h-[44vh] min-h-[240px] sm:h-[50vh] md:h-[75vh] max-h-screen overflow-hidden rounded-3xl bg-slate-900">
           <img
-            src={`${import.meta.env.BASE_URL}/ability.png`}
+            src={`${import.meta.env.BASE_URL}ability.png`}
             alt="Загрузка карго в самолёт"
             className="w-full h-full object-cover"
           />
         </div>
 
-        <div className="relative -mt-14 sm:-mt-16 md:-mt-20 grid grid-cols-1 md:grid-cols-4">
+        <div className="relative -mt-14 sm:-mt-16 md:-mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           <AbilityCard
             {...CARDS[0]}
-            className="rounded-t-2xl md:rounded-t-none md:rounded-l-2xl"
+            className="rounded-t-2xl sm:rounded-t-none sm:rounded-tl-2xl lg:rounded-l-2xl"
           />
-          <AbilityCard {...CARDS[1]} />
-          <AbilityCard {...CARDS[2]} />
+          <AbilityCard
+            {...CARDS[1]}
+            className="sm:rounded-tr-2xl lg:rounded-none"
+          />
+          <AbilityCard
+            {...CARDS[2]}
+            className="sm:rounded-bl-2xl lg:rounded-none"
+          />
           <AbilityCard
             {...CARDS[3]}
-            className="rounded-b-2xl md:rounded-b-none md:rounded-r-2xl"
+            className="rounded-b-2xl sm:rounded-b-none sm:rounded-br-2xl lg:rounded-r-2xl"
           />
         </div>
       </div>
