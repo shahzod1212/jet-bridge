@@ -2,27 +2,29 @@ import React from "react";
 
 const TestimonialCard = ({ name, location, text, avatar }) => {
   return (
-    <div className="flex flex-col flex-shrink-0 snap-start w-[240px] sm:w-[260px] md:w-[280px] lg:w-[300px] xl:w-[340px] 2xl:w-[380px] rounded-2xl xl:rounded-3xl bg-white p-4 sm:p-5 xl:p-6 2xl:p-7 shadow-lg shadow-black/20">
-      <div className="flex items-center gap-3 xl:gap-4">
-        <img
-          src={avatar}
-          alt=""
-          loading="lazy"
-          decoding="async"
-          className="w-12 h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 rounded-full object-cover flex-shrink-0 bg-slate-200"
-        />
-        <p className="min-w-0 break-words text-sm xl:text-base 2xl:text-lg font-bold leading-tight text-slate-950">
-          {name}
-          <br />
-          {location}
+    <div className="flex flex-shrink-0 snap-start w-[clamp(15rem,24vw,24rem)] rounded-[clamp(1rem,2vw,1.75rem)] bg-white shadow-lg shadow-black/20 [container-type:inline-size]">
+      <div className="flex min-w-0 flex-1 flex-col p-[clamp(1rem,7cqw,1.75rem)]">
+        <div className="flex items-center gap-[clamp(0.75rem,4.5cqw,1rem)]">
+          <img
+            src={avatar}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            className="w-[clamp(3rem,18cqw,4rem)] h-[clamp(3rem,18cqw,4rem)] rounded-full object-cover flex-shrink-0 bg-slate-200"
+          />
+          <p className="min-w-0 break-words text-[length:clamp(0.875rem,5.4cqw,1.125rem)] font-bold leading-tight text-slate-950">
+            {name}
+            <br />
+            {location}
+          </p>
+        </div>
+
+        <div className="mt-[clamp(1rem,6cqw,1.25rem)] border-t border-slate-200" />
+
+        <p className="mt-[clamp(1rem,6cqw,1.25rem)] text-[length:clamp(0.75rem,4.6cqw,1.125rem)] text-slate-600 leading-relaxed break-words">
+          {text}
         </p>
       </div>
-
-      <div className="mt-4 xl:mt-5 border-t border-slate-200" />
-
-      <p className="mt-4 xl:mt-5 text-xs sm:text-sm xl:text-base 2xl:text-lg text-slate-600 leading-relaxed break-words">
-        {text}
-      </p>
     </div>
   );
 };
